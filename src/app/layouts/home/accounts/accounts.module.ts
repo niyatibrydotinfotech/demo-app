@@ -24,7 +24,7 @@ const routes: Routes = [
         providers: [
           {
             id: FacebookLoginProvider.PROVIDER_ID,
-            provider: new FacebookLoginProvider('319681777004963')
+            provider: new FacebookLoginProvider('339079519938398')
           }
         ],
         onError: (err) => {

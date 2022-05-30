@@ -22,7 +22,7 @@ export class AccountsComponent implements OnInit {
   config = [
     {
       id: FacebookLoginProvider.PROVIDER_ID,
-      provider: new FacebookLoginProvider("319681777004963", this.fbLoginOptions)
+      provider: new FacebookLoginProvider("339079519938398", this.fbLoginOptions)
     }
   ];
 
@@ -61,8 +61,7 @@ export class AccountsComponent implements OnInit {
 
   signInWithInsta() {
     //window.open("https://api.instagram.com/oauth/authorize/?client_id=425123406125187&redirect_uri=http://localhost:4200&response_type=code", "_blank", "height=580,width=720");
-    //window.open("https://api.instagram.com/oauth/authorize?app_id=425123406125187&redirect_uri=http://localhost:4200/&scope=user_profile,user_media&response_type=code", "_blank", "height=580,width=720");
-    window.open("https://api.instagram.com/oauth/authorize?client_id=425123406125187&redirect_uri=http://localhost:4200/&response_type=code&scope=user_profile", "_blank", "height=580,width=720");
+    window.open("https://api.instagram.com/oauth/authorize?app_id=425123406125187&redirect_uri=https://socialsizzle.herokuapp.com/auth/&scope=user_profile,user_media&response_type=code", "_blank", "height=580,width=720");
     
   }
   
