@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="66" height="66.008" viewBox="0 0 66 66.008">
+    <defs>
+      <clipPath id="clip-path">
+        <path id="_Compound_Path_" data-name="&lt;Compound Path&gt;" d="M22.565,5H54.148c.7.351,1.755.351,2.456.7A16.774,16.774,0,0,1,69.94,17.282a28.073,28.073,0,0,1,1.053,5.264V53.427a24.354,24.354,0,0,1-4.211,10.879A19.336,19.336,0,0,1,50.99,70.973H24.671a19.266,19.266,0,0,1-12.984-4.211A19.336,19.336,0,0,1,5.019,51.111V26.547a26.565,26.565,0,0,1,.351-5.264A17.2,17.2,0,0,1,18.705,6.193ZM11.687,38.337V52.023A12,12,0,0,0,24.671,65.007q13.686.526,27.372,0c8.071,0,12.633-4.913,12.984-12.984q.526-13.686,0-27.372A12.352,12.352,0,0,0,52.043,11.667q-13.686-.526-27.372,0A12,12,0,0,0,11.687,24.652Z" transform="translate(-4.992 -5)" fill="#fff"/>
+      </clipPath>
+      <linearGradient id="linear-gradient" x1="-0.064" y1="1.055" x2="1.114" y2="-0.105" gradientUnits="objectBoundingBox">
+        <stop offset="0" stop-color="#fed576"/>
+        <stop offset="0.26" stop-color="#f47133"/>
+        <stop offset="0.61" stop-color="#bc3081"/>
+        <stop offset="1" stop-color="#4c63d2"/>
+      </linearGradient>
+      <clipPath id="clip-path-2">
+        <path id="_Compound_Path_2" data-name="&lt;Compound Path&gt;" d="M9.64,26.835a17.23,17.23,0,0,1,17.2-17.2,17.546,17.546,0,0,1,17.2,17.2,17.23,17.23,0,0,1-17.2,17.2A17.546,17.546,0,0,1,9.64,26.835Zm17.2-10.879A10.7,10.7,0,1,0,37.363,26.484,10.528,10.528,0,0,0,26.835,15.957Z" transform="translate(-9.64 -9.64)" fill="#fff"/>
+      </clipPath>
+      <clipPath id="clip-path-3">
+        <path id="_Path_" data-name="&lt;Path&gt;" d="M18.342,12.453a4.071,4.071,0,0,1,4.211-4.211,4.527,4.527,0,0,1,4.211,4.211,4.211,4.211,0,0,1-8.422,0Z" transform="translate(-18.339 -8.239)" fill="#fff"/>
+      </clipPath>
+    </defs>
+    <g id="Group_3410" data-name="Group 3410" transform="translate(-1617.155 -470.244)">
+      <g id="Mask_Group_7" data-name="Mask Group 7" transform="translate(1617.155 470.244)" clip-path="url(#clip-path)">
+        <rect id="Rectangle_231" data-name="Rectangle 231" width="152.877" height="152.877" rx="6.48" transform="translate(-43.509 -43.509)" fill="url(#linear-gradient)"/>
+      </g>
+      <g id="Mask_Group_8" data-name="Mask Group 8" transform="translate(1633.465 486.527)" clip-path="url(#clip-path-2)">
+        <rect id="Rectangle_271" data-name="Rectangle 271" width="152.877" height="152.877" rx="6.48" transform="translate(-59.819 -59.792)" fill="url(#linear-gradient)"/>
+      </g>
+      <g id="Mask_Group_9" data-name="Mask Group 9" transform="translate(1663.992 481.612)" clip-path="url(#clip-path-3)">
+        <rect id="Rectangle_270" data-name="Rectangle 270" width="152.877" height="152.877" rx="6.48" transform="translate(-90.346 -54.876)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </svg>

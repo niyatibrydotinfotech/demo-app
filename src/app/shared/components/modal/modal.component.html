@@ -1,0 +1,104 @@
+<div id="createPostModal" class="modal fade post-modal" [ngClass]="dataPostBtnClick ? 'show d-block' : ''" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Create Posts</h4>
+            <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" (click)="postBtnClick(false)">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <h6>Channels</h6>
+            <div class="row">
+            <div class="col-12 col-md-2 col-lg-2">
+                <div class="social-card-wrapper">
+                <div class="card">
+                    <i class="fa fa-twitter"></i>
+                </div>
+                <p><strong>TWITTER</strong></p>
+                </div>
+            </div>
+            <div class="col-12 col-md-2 col-lg-2">
+                <div class="social-card-wrapper">
+                <div class="card">
+                    <i class="fa fa-facebook"></i>
+                </div>
+                <p><strong>FACEBOOK</strong></p>
+                </div>
+            </div>
+            <div class="col-12 col-md-2 col-lg-2">
+                <div class="social-card-wrapper">
+                <div class="card">
+                    <img src="assets/svg/tiktok.svg" alt="Tiktok">
+                </div>
+                <p><strong>TIKTOK</strong></p>
+                </div>
+            </div>
+            <div class="col-12 col-md-2 col-lg-2">
+                <div class="social-card-wrapper">
+                <div class="card selected">
+                    <i class="fa fa-instagram"></i>
+                </div>
+                <p><strong>INSTAGRAM</strong></p>
+                </div>
+            </div>
+            </div>
+            <br>
+            <hr class="divider">
+            <div class="row">
+            <div class="col-12 col-md-8">
+                <h6>Post Content</h6>
+                <div class="editor">
+                <textarea name="postEditor" id="postEditor" class="form-control"
+                    placeholder="What's on your mind?"></textarea>
+                <div class="bottom-actions">
+                    <div class="left-items">
+                    <div class="camera-wrapper">
+                        <i class="sc-icon camera"></i>
+                    </div>
+                    <div class="map-marker">
+                        <i class="sc-icon location-pin"></i>
+                    </div>
+                    <div class="hastag">
+                        <i class="sc-icon hashtag">
+                        #
+                        </i>
+                    </div>
+                    </div>
+                    <div class="right-items">
+                    <div class="gif-wrapper">
+                        <i class="sc-icon gif">
+
+                        </i>
+                    </div>
+                    <div class="emoji">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22.598" height="22.598"
+                        viewBox="0 0 22.598 22.598">
+                        <path id="smile"
+                            d="M11.3,22.6A11.3,11.3,0,0,1,3.309,3.309,11.3,11.3,0,0,1,19.288,19.288,11.225,11.225,0,0,1,11.3,22.6Zm0-20.832A9.533,9.533,0,1,0,20.832,11.3,9.544,9.544,0,0,0,11.3,1.765Zm4.137,11.484a.883.883,0,0,0-1.219.271,3.885,3.885,0,0,1-2.963,1.71,3.885,3.885,0,0,1-2.963-1.71.883.883,0,0,0-1.489.948A5.675,5.675,0,0,0,11.255,17a5.675,5.675,0,0,0,4.452-2.527.883.883,0,0,0-.271-1.219ZM7.415,7.282a1.1,1.1,0,1,1-1.1,1.1A1.1,1.1,0,0,1,7.415,7.282Zm6.62,1.1a1.1,1.1,0,1,0,1.1-1.1A1.1,1.1,0,0,0,14.035,8.386Z"
+                            fill="#707070" />
+                        </svg>
+
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="form-group">
+                <h6 for="">Publish Date</h6>
+                <input type="text" class="form-control" placeholder="Select Publish Date" bsDatepicker placement="top" >
+                </div>
+                <div class="form-group">
+                <h6 for="">Publish Time</h6>
+                
+                <timepicker ></timepicker>
+                </div>
+                <button class="btn btn-primary w-100" data-bs-dismiss="modal">Add Post </button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show" style="z-index: -1;"></div>
+</div>

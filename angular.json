@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "demo-app": {
+    "draftree": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/demo-app",
+            "outputPath": "dist/draftree",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,6 +24,9 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "./src/assets/css/font-awesome.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -63,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "demo-app:build"
+            "browserTarget": "draftree:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "demo-app:build:production"
+              "browserTarget": "draftree:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "demo-app:build"
+            "browserTarget": "draftree:build"
           }
         },
         "test": {
@@ -111,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "demo-app:serve"
+            "devServerTarget": "draftree:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "demo-app:serve:production"
+              "devServerTarget": "draftree:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "demo-app"
+  "defaultProject": "draftree"
 }

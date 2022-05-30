@@ -1,0 +1,34 @@
+<form [formGroup]="loginForm" (ngSubmit)="submitLoginForm()" class="php-email-form">
+    <div class="row">
+      <div class="col-12 px-0">
+        <div class="logo text-center my-2">
+          <img src="assets/img/logo.png" class="img-fluid" alt="" width="200px">
+        </div>
+        <div class="text-center">
+          <h3 class="text-primary mt-4 mb-4">Login</h3>
+        </div>
+        <div class="col-md-12 form-group">
+          <label for="email">Email</label>
+          <input type="email" id="user_email" class="form-control" formControlName="user_email" required placeholder="yours@example.com" />
+          <div *ngIf="user.invalid && ((user.touched && submitted) || (user.touched && !submitted) || (!user.touched && submitted))" style="color: red;">Please enter valid Email address.</div>
+        </div>
+        <div class="col-md-12 form-group">
+          <label for="password">Password</label>
+          <input type="password" id="user_password" class="form-control" formControlName="user_password" required placeholder="your password" />
+          <div *ngIf="password.invalid && ((password.touched && submitted) || (password.touched && !submitted) || (!password.touched && submitted))" style="color: red;">Please enter Password.</div>
+        </div>
+        <div class="col-md-12 form-group">
+        <a routerLink="/auth/reset-password" class="forgot-link">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+        <button type="submit" class="btn-pill text-uppercase text-dark w-100">Login</button>
+    </div>
+    <div class="mt-4 text-center">
+      <span>
+        Don't have an account yet ?
+      </span>
+      <a routerLink="/auth/signup" class="text-info">Sign Up</a>
+    </div>
+  </form>

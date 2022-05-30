@@ -1,0 +1,42 @@
+<div class="main-header">
+<header id="header" class="d-flex align-items-center fixed-top">
+    <div class="container-fluid d-flex align-items-center justify-content-start">
+      <h1 class="logo"><a href="index.html">
+          <img src="assets/img/logo.png" class="img-fluid" alt="" width="200px">
+        </a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li *ngFor="let item of navItems">
+            <a class="nav-link scrollto" routerLinkActive="active" routerLink="{{item.path}}">{{item.name}}</a>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <div class="right-side d-flex justify-content-end">
+        <div class="text-center">
+          <button type="button" class="btn btn-warning mr-2" (click)="openPostCreateModal()">
+            <i class="fa fa-pencil-square-o mr-2"></i><span class="m-remove">Create Posts</span></button></div>
+        <div class="text-center">
+          <button type="button" class="btn btn-warning"><i class="fa fa-cog"
+             ></i></button>
+        </div>
+        <div class="dropdown ml-2">
+          <button (appClickOutside)="isShowDropDown = false" class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton1"
+            data-toggle="dropdown" aria-expanded="false" (click)="isShowDropDown = !isShowDropDown">
+            <span class="mr-2"><img src="assets/img/logo.png" class="user-pic" alt=""></span> <span>Smith</span>
+          </button>
+          <ul class="dropdown-menu" [ngClass]="isShowDropDown ? 'show': ''" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="javascript:void(0)" data-target="#invitePeoplelModal" data-toggle="modal">Invite People</a></li>
+            <li><a class="dropdown-item" href="javascript:void(0)" data-target="#manageSubscriptionModal" data-toggle="modal">Manage Subscription</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<main id="main" class="scrolled-offset">
+    <router-outlet></router-outlet>
+</main>
+
+<!-- <app-modal [dataPostBtnClick]="createPostBtnClicked" (createPostBtnClick)="postBtnClick($event)"></app-modal> -->
